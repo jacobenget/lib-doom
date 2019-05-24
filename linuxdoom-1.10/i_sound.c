@@ -42,6 +42,8 @@ rcsid[] = "$Id: i_unix.c,v 1.5 1997/02/03 22:45:10 b1 Exp $";
 #include <unistd.h>
 #include <sys/ioctl.h>
 
+#include <errno.h>
+
 // Linux voxware output.
 #include <linux/soundcard.h>
 
@@ -164,7 +166,6 @@ myioctl
   int*	arg )
 {   
     int		rc;
-    extern int	errno;
     
     rc = ioctl(fd, command, arg);  
     if (rc < 0)

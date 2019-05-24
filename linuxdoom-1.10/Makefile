@@ -8,7 +8,7 @@ CC=  gcc  # gcc or g++
 
 CFLAGS=-g -Wall -DNORMALUNIX -DLINUX -I/opt/X11/include # -DUSEASM 
 LDFLAGS=-L/usr/X11R6/lib
-LIBS=-lXext -lX11 -lnsl -lm
+LIBS=-lXext -lX11
 
 # subdirectory for objects
 O=linux

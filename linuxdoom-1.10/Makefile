@@ -83,6 +83,9 @@ clean:
 	rm -f *.o *~ *.flc
 	rm -f linux/*
 
+format:
+	clang-format -i -style=file ./*.c ./*.h
+
 $(O)/linuxxdoom:	$(OBJS) $(O)/i_main.o
 	$(CC) $(CFLAGS) $(LDFLAGS) $(OBJS) $(O)/i_main.o \
 	-o $(O)/linuxxdoom $(LIBS)

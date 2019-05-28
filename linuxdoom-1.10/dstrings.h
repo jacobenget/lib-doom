@@ -1,4 +1,4 @@
-// Emacs style mode select   -*- C++ -*- 
+// Emacs style mode select   -*- C++ -*-
 //-----------------------------------------------------------------------------
 //
 // $Id:$
@@ -23,10 +23,8 @@
 //
 //-----------------------------------------------------------------------------
 
-
 #ifndef __DSTRINGS__
 #define __DSTRINGS__
-
 
 // All important printed strings.
 // Language selection (message strings).
@@ -39,8 +37,7 @@
 #endif
 
 // Misc. other strings.
-#define SAVEGAMENAME	"doomsav"
-
+#define SAVEGAMENAME "doomsav"
 
 //
 // File locations,
@@ -50,14 +47,12 @@
 #define DEVMAPS "devmaps"
 #define DEVDATA "devdata"
 
-
 // Not done in french?
 
 // QuitDOOM messages
-#define NUM_QUITMESSAGES   22
+#define NUM_QUITMESSAGES 22
 
 extern char* endmsg[];
-
 
 #endif
 //-----------------------------------------------------------------------------
